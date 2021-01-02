@@ -11,12 +11,16 @@ exports.run = async (bot, message, args, tools) => {
     )
     .addField(
       `Bot`,
-      `\`bot-bilgi\`, \`yapımcı\`,\`üye-say\`, \`ping\`, \`avatar\`, \`top20\`, \`davet-oluştur\``
+      `\`bot-bilgi\`, \`yapımcı\`,\`say\`, \`ping\`, \`avatar\`, \`top20\`, \`davet-oluştur\`, \`ailemiz\``
     )
     .addField(
       `Moderasyon`,
-      `\`ban\`, \`kick\`, \`kanal-kilit\`, \`unban\`, \`mute\`, \`takma-ad\`, \`temizle\``
+      `\`ban\`, \`kick\`, \`kanal-kilit\`, \`unban\`, \`mute\`, \`takma-ad\`, \`sil\`, \`yaz\`, \`uyar\`, \`reklam-taraması\``
     )
+    .addField(
+      `Kayıt`,
+      `\` erkek (e) \`, \` kadın (k) \``
+      )
     .addField(
       `Sistem`,
       `\`otorol\`, \`otorol-sıfırla\`, \`otorol-mesaj\`, \`otorol-mesaj-sıfırla\`, \`sayaç\`, \`sayaç-sıfırla\`, \`ever-engel\`, \`sa-as\`, \`ototag\`, \`ototag-isim\`, \`ototag-sıfırla\`, \`hg-bb\``
@@ -29,7 +33,7 @@ exports.run = async (bot, message, args, tools) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["y"],
+  aliases: ["yardım"],
   permLevel: 0
 };
 
